@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #6a0dad;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        .hero {
+            background-image: url('PORCHE.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #6a0dad;
+            border-bottom: 2px solid #6a0dad;
+            padding-bottom: 5px;
+        }
+
+        .country-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #6a0dad;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        .welcome {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .booking {
+            background-color: white;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .booking input,
+        .booking select,
+        .booking button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .booking button {
+            background-color: #6a0dad;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .booking button:hover {
+            background-color: gold;
+            color: black;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .social a {
+            color: gold;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        @media(max-width:768px) {
+            .hero {
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .country-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Travel With Us</h1>
+        <p>Your Complete Travel Guide</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Destinations</a>
+        <a href="#">Booking</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            Explore The World
+            <br>
+            <a href="#main-content" class="btn" style="margin-top: 20px; display: inline-block;">Enter Website</a>
+        </div>
+    </section>
+
+    <div class="container" id="main-content">
+
+        <p class="welcome">
+            Welcome travelers! Explore beautiful destinations across the world with us.
+        </p>
+
+        <h2>Popular Destinations</h2>
+
+        <div class="country-list">
+
+            <!-- France -->
+            <div class="card">
+                <img src="france.jpg" alt="France">
+                <div class="card-content">
+                    <h3>France</h3>
+                    <p>Visit Paris, the Eiffel Tower, and enjoy French culture.</p>
+                    <a href="https://en.parisinfo.com/" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Italy -->
+            <div class="card">
+                <img src="italy.jpg" alt="Italy">
+                <div class="card-content">
+                    <h3>Italy</h3>
+                    <p>Discover Rome, Venice, and delicious Italian food.</p>
+                    <a href="https://www.italia.it/en" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Uganda -->
+            <div class="card">
+                <img src="uganda.jpg" alt="Uganda">
+                <div class="card-content">
+                    <h3>Uganda</h3>
+                    <p>Experience wildlife, lakes, and natural beauty.</p>
+                    <a href="https://www.visituganda.com/" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- India -->
+            <div class="card">
+                <img src="india.jpg" alt="India">
+                <div class="card-content">
+                    <h3>India</h3>
+                    <p>Explore the Taj Mahal and vibrant Indian traditions.</p>
+                    <a href="https://www.incredibleindia.org/" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Thailand -->
+            <div class="card">
+                <img src="thailand.jpg" alt="Thailand">
+                <div class="card-content">
+                    <h3>Thailand</h3>
+                    <p>Enjoy beaches, temples, and exciting nightlife.</p>
+                    <a href="https://www.tourismthailand.org/" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rwanda -->
+            <div class="card">
+                <img src="rwanda.jpg" alt="Rwanda">
+                <div class="card-content">
+                    <h3>Rwanda</h3>
+                    <p>Visit mountain gorillas and beautiful green hills.</p>
+                    <a href="https://www.visitrwanda.com/" class="btn" target="_blank">
+                        Read More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Booking Section -->
+        <div class="booking">
+            <h2>Book Your Trip</h2>
+
+            <form>
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option>Select Destination</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                    <option>Uganda</option>
+                    <option>India</option>
+                    <option>Thailand</option>
+                    <option>Rwanda</option>
+                </select>
+
+                <input type="date" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>Email: gambadavis5@gmail.com</p>
+        <p>Phone: 0768434280</p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+
+        <p>&copy; 2026 Travel With Us. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
